@@ -45,7 +45,7 @@ bias(bc)
 plot(bc, type="hist")
 plot(bc, type="qq")
 ```
-# When you have multiple sets of test statistics and you want to do a fixed-effect meta-analysis
+## When you have multiple sets of test statistics and you want to do a fixed-effect meta-analysis
 You'll probably want to run this in parallel
 ```r
 library(BiocParallel)
@@ -65,7 +65,8 @@ es<-na.omit(as.matrix(M_C[,grep(colnames(M_C),pattern="_beta")]))
 se<-na.omit(as.matrix(M_C[,grep(colnames(M_C),pattern="_se")]))
 ```
 bacon doesn't appear to cope with NAs, and since not every cohort supplied results for every probe, there are a lot of NAs.
-In fact there are only 255,514 probes
+In fact there are only 255,514 probes  
+
 *How have other people got round this?*
 
 
