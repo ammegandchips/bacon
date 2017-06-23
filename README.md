@@ -35,7 +35,7 @@ Youll probably want to run this in parallel
 library(BiocParallel)
 register(MulticoreParam(1, log=TRUE))
 ```
-es is a matrix of effect sizes (beta coefficients) and se is a matrix of the equivalent standard errors. Each row is a probe and each column is a study.
+`es` is a matrix of effect sizes (beta coefficients) and `se` is a matrix of the equivalent standard errors. Each row is a probe and each column is a study.
 ```r
 bc <- bacon(NULL, es, se)
 bc
