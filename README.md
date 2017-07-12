@@ -17,7 +17,7 @@ This doesn't work if you try to run it on test statistics from METAL. Very small
 z <- dat$beta / dat$se
 bc <- bacon(z)
 bc
-estimate(bc)
+estimates(bc)
 inflation(bc)
 bias(bc)
 ```
